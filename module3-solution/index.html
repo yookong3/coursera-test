@@ -1,38 +1,82 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Yubin Lee - MODULE 2 SOLUTION</title>
-<link rel = "stylesheet" type = "text/css" href = "css/style.css">
-</head>
-<body>
-<h1>Our Menu</h1>
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yubin Lee - MODULE 3 SOLUTION</title>
+  <script src ="js/jquery-1.11.3.min.js"></script>
+  <script src ="js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel ="stylesheet" type = "text/css" href = "css/style.css">
+  </head>
+  <body>
+  <header> 
+      <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html" class="pull-left visible-md visible-lg">
+            </a>
+            <div class="navbar-brand">
+              <a href="index.html"><h1>Food, LLC</h1></a>
+          </div>
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+             <ul id="nav-list" class="nav navbar-nav navbar-right hidden-lg hidden-md hidden-sm">
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-heart"></span><br class="hidden-xs"> Chicken</a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-star"></span><br class="hidden-xs"> Beef</a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-star-empty"></span><br class="hidden-xs"> Seafood</a>
+              </li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
 
-<div class="row">
-  <div class="col-lg-4 col-md-6 col-sm-12">
-  	<p class = "title chicken">Chicken</p>
-  	<p class = "menu_name">1. Super delicious Chicken Soup ----- $30<br>
-  	2. Crispy Chicken Salad for the coolest people ----- $40<br>
-  	3. Volcano Hot Chicken BBQ ----- $50<br>
-  	4. Steak made by a bird looks like chicken ----- $0</p>
+      </div>
+    </nav>
+  </header>
+
+  <h1 class="our-menu text-center">Our Menu</h1>
+
+  <div class="row">
+  <div class="container-fluid">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+    	<p class = "title chicken">Chicken</p>
+    	<p class = "menu_name really-tall">1. Super delicious Chicken Soup ----- $30<br>
+    	2. Crispy Chicken Salad for the coolest people ----- $40<br>
+    	3. Volcano Hot Chicken BBQ ----- $50<br>
+    	4. Steak made by a bird looks like chicken ----- $0<br>
+      Create a single really tall section that will use the Bootstrap Grid and take up the entire width of the browser window (minus some margins, of course) for all views: desktop, tablet, and mobile. To make the section really tall, you can either fill it out with a LOT of text or simply set its height to something like 1000px. It needs to be tall enough to cause scrolling down to be required to view the bottom of the section. Make sure its background color is set to distinguish it from the rest of the content. (Hint: don’t forget to have an element with a class=’container’ or class=’container-fluid’ wrapping your grid. Remember that to have the grid do something “always”, i.e., no matter what browser window size, use the col-xs-... classes. In this case, since we want the section to take up the entire row, use col-xs-12.)Create a single really tall section that will use the Bootstrap Grid and take up the entire width of the browser window (minus some margins, of course) for all views: desktop, tablet, and mobile. To make the section really tall, you can either fill it out with a LOT of text or simply set its height to something like 1000px. It needs to be tall enough to cause scrolling down to be required to view the bottom of the section. Make sure its background color is set to distinguish it from the rest of the content. (Hint: don’t forget to have an element with a class=’container’ or class=’container-fluid’ wrapping your grid. Remember that to have the grid do something “always”, i.e., no matter what browser window size, use the col-xs-... classes. In this case, since we want the section to take up the entire row, use col-xs-12.)Create a single</p>
+    </div>
+
+     <div class="col-lg-4 col-md-6 col-sm-12">
+    	<p class = "title beef">Beef</p>
+    	<p class = "menu_name">1. Green Salad with Cow food ----- $0<br>
+    	2. Milk Soup for calf ----- $40<br>
+    	3. Chop Steak with pepper ----- $30<br>
+    	4. Korean Bulgogi ----- $100</p>
+    </div>
+
+     <div class="col-lg-4 col-md-12 col-sm-12">
+    	<p class = "title seafood">Seafood</p>
+    	<p class = "menu_name">1. Mermaid Soup ----- $400<br>
+    	2. Steamed Pearl ----- $5000<br>
+    	3. Seaweed Salad with Ketchup ----- $1<br>
+    	4. Deep Deep Sea Water ----- $20</p>
+    </div>
   </div>
-
-   <div class="col-lg-4 col-md-6 col-sm-12">
-  	<p class = "title beef">Beef</p>
-  	<p class = "menu_name">1. Green Salad with Cow food ----- $0<br>
-  	2. Milk Soup for calf ----- $40<br>
-  	3. Chop Steak with pepper ----- $30<br>
-  	4. Korean Bulgogi ----- $100</p>
   </div>
-
-   <div class="col-lg-4 col-md-12 col-sm-12">
-  	<p class = "title seafood">Seafood</p>
-  	<p class = "menu_name">1. Mermaid Soup ----- $400<br>
-  	2. Steamed Pearl ----- $5000<br>
-  	3. Seaweed Salad with Ketchup ----- $1<br>
-  	4. Deep Deep Sea Water ----- $20</p>
-  </div>
-</div>
-
-</body>
-</html>
+  </body>
+  </html>
